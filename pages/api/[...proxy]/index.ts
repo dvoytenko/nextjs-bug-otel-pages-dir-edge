@@ -11,7 +11,7 @@ export default async function handler(req: NextRequest, _ev: NextFetchEvent) {
   const url = new URL(originalUrl.pathname.slice(4), origin);
   url.search = originalUrl.search;
   const res = await fetch(url, {
-    method: "post",
+    method: "POST",
     body: JSON.stringify({ message: "g'day mate!" }),
     headers: {
       "Content-Type": "application/json",
