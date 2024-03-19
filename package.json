@@ -6,6 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@opentelemetry/api": "^1.8.0",
+    "@vercel/otel": "^1.6.0",
     "next": "canary",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
