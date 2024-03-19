@@ -10,8 +10,14 @@ export default async function handler(req: NextRequest, _ev: NextFetchEvent) {
   if (!origin) return new Response("?origin not provided", { status: 400 });
   const url = new URL(originalUrl.pathname.slice(4), origin);
   url.search = originalUrl.search;
-  const newReq = new Request(url, req);
-  const res = await fetch(newReq);
+  const forwardReq = new Request(url, {
+    method: "POST",
+    body: JSON.stringify({ message: "g'day mate!" }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  const res = await fetch(forwardReq);
   res.headers.set("x-forwarded-url", url.href);
   res.headers.set("x-original-url", originalUrl.href);
   return res;
