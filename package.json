@@ -8,7 +8,7 @@
   "dependencies": {
     "@opentelemetry/api": "^1.8.0",
     "@opentelemetry/sdk-trace-base": "^1.22.0",
-    "@vercel/otel": "^1.6.0",
+    "@vercel/otel": "1.6.2-fcc2f7f7-20240320190806",
     "next": "canary",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

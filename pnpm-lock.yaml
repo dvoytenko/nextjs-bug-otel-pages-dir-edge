@@ -12,8 +12,8 @@ dependencies:
     specifier: ^1.22.0
     version: 1.22.0(@opentelemetry/api@1.8.0)
   '@vercel/otel':
-    specifier: ^1.6.0
-    version: 1.6.0(@opentelemetry/api-logs@0.46.0)(@opentelemetry/api@1.8.0)(@opentelemetry/instrumentation@0.46.0)(@opentelemetry/resources@1.22.0)(@opentelemetry/sdk-logs@0.46.0)(@opentelemetry/sdk-metrics@1.22.0)(@opentelemetry/sdk-trace-base@1.22.0)
+    specifier: 1.6.2-fcc2f7f7-20240320190806
+    version: 1.6.2-fcc2f7f7-20240320190806(@opentelemetry/api-logs@0.46.0)(@opentelemetry/api@1.8.0)(@opentelemetry/instrumentation@0.46.0)(@opentelemetry/resources@1.22.0)(@opentelemetry/sdk-logs@0.46.0)(@opentelemetry/sdk-metrics@1.22.0)(@opentelemetry/sdk-trace-base@1.22.0)
   next:
     specifier: canary
     version: 14.2.0-canary.31(@opentelemetry/api@1.8.0)(react-dom@18.2.0)(react@18.2.0)
@@ -274,8 +274,8 @@ packages:
     resolution: {integrity: sha512-9Hp0ObzwwO57DpLFF0InUjUm/II8GmKAvzbefxQTihCb7KI6yc9yzf0nLc4mVdby5N4DRCgQM2wCup9KTieeww==}
     dev: false
 
-  /@vercel/otel@1.6.0(@opentelemetry/api-logs@0.46.0)(@opentelemetry/api@1.8.0)(@opentelemetry/instrumentation@0.46.0)(@opentelemetry/resources@1.22.0)(@opentelemetry/sdk-logs@0.46.0)(@opentelemetry/sdk-metrics@1.22.0)(@opentelemetry/sdk-trace-base@1.22.0):
-    resolution: {integrity: sha512-BsckjEJhEc8qzMRI5f6f/FAPSmNjsaHYjHaBFxOc9BVIwGYhksVL5Z493vZlWpoms9z/4f45ix5QS7sBx75GcA==}
+  /@vercel/otel@1.6.2-fcc2f7f7-20240320190806(@opentelemetry/api-logs@0.46.0)(@opentelemetry/api@1.8.0)(@opentelemetry/instrumentation@0.46.0)(@opentelemetry/resources@1.22.0)(@opentelemetry/sdk-logs@0.46.0)(@opentelemetry/sdk-metrics@1.22.0)(@opentelemetry/sdk-trace-base@1.22.0):
+    resolution: {integrity: sha512-kaW3XjmmhjlIaL4gMGeAV2UxWfgXvSWrx01qMMkzuLM2ahdRR3CPs/gBbL5zskubEMDVOoqc8NPTH8kO6bOuAw==}
     engines: {node: '>=18'}
     peerDependencies:
       '@opentelemetry/api': ^1.7.0
