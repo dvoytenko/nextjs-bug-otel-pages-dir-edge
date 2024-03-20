@@ -1,3 +1,7 @@
+import {
+  ConsoleSpanExporter,
+  SimpleSpanProcessor,
+} from "@opentelemetry/sdk-trace-base";
 import { registerOTel } from "@vercel/otel";
 
 export function register() {
@@ -8,5 +12,6 @@ export function register() {
         propagateContextUrls: ["*"],
       },
     },
+    // spanProcessors: [new SimpleSpanProcessor(new ConsoleSpanExporter())],
   });
 }
