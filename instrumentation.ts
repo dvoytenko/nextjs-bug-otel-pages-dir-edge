@@ -10,6 +10,7 @@ export function register() {
     instrumentationConfig: {
       fetch: {
         propagateContextUrls: ["*"],
+        ignoreUrls: ["*"],
       },
     },
     // spanProcessors: [new SimpleSpanProcessor(new ConsoleSpanExporter())],
