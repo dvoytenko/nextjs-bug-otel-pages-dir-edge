@@ -21,6 +21,9 @@ export default async function handler(req: NextRequest, _ev: NextFetchEvent) {
     },
   });
   console.log("log 3");
+  const copyReq = new Request(forwardReq);
+  const v = await forwardReq.json();
+  return Response.json({ works: 1, v });
   const res = await fetch(forwardReq);
   console.log("log 4");
   res.headers.set("x-forwarded-url", url.href);
